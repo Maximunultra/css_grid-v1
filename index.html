@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        
+        h1{
+            text-align: center;
+        }
+        .grid{
+            height: 100vh;
+            padding: 5px;
+            place-items: center;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill,215px);
+            row-gap: 20px;
+            column-gap: 10px;
+            
+        }
+
+        .grid>* {
+        height: 500px;
+        }
+            
+        
+        .child{
+            width: 200px;
+            border: 1px solid silver;
+            box-shadow: 2px 2px 2px hsl(0, 13%, 95%);
+            padding: 1px;
+        }
+        .image{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            overflow: hidden;
+        }
+        img{
+            width: 200px;
+            height: 350px;
+            border-radius: 2px;
+            object-fit: cover;
+            transition: transform .8s;
+        }
+        img:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+
+        .img-title{
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        p{
+            padding-left: 5px;
+        }
+
+        button{
+            background-color: rgb(49, 52, 238);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 2px;
+            position: relative;
+            left: 10px;
+            bottom: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>CSS GRID GALLERY</h1>
+    <div class="grid">
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706550037547-ead67be5816e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8" alt="">         
+            </div>
+            <p class="img-title">Image Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706545512961-dde803e08f5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="">           
+            </div>
+            <p class="img-title">Image Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706545512982-b457dbd80aeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" alt=""> 
+            </div>
+            <p class="img-title">Image Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://plus.unsplash.com/premium_photo-1673515787834-5f0e6d201554?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="">   
+            </div>
+            <p class="img-title">Image Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1504133240992-d676c40f1d93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="">     
+            </div>
+            <p class="img-title">Image Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1536778542960-85e8f3de61dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="">    
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1705551010571-915e98881402?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" alt="">    
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1704913427542-edbd4c4f3134?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">   
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1703700414418-2969a8dc8978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1703000421158-1ef6fd894c7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706430321596-812ee39401a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">     
+            </div>
+
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706493676150-25982c763b26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706285528419-c8012d6e8c26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1705469492528-cab3162cb4ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1705631956989-77b8dcd880b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt=""> 
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706277608656-6e1ef2dbce0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">        
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1706473841789-56f397f3f0ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">       
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1705957312285-5b0f602c84ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">       
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1701086292958-f753f3bb5d27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D" alt="">    
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1703235379678-1e14654d69aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="">  
+            </div>
+            <p class="img-title">Image title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button type="button">click me</button>
+        </div>
+
+        
+
+       
+    </div>
+</body>
+</html>
